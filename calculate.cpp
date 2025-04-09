@@ -1,15 +1,22 @@
 double calculate(double a, double b, char operation) {
+    const double results[3] = {a + b, a - b, a * b};
+    int index = -1;
+
     switch (operation) {
     case '+':
-        return a + b;
+        index = 0;
+        break;
     case '-':
-        return a - b;
+        index = 1;
+        break;
     case '*':
-        return a * b;
+        index = 2;
+        break;
     case '/':
-        // Деление на ноль без проверки - ошибка error (критическая)
-        return a / b;
+        return (b != 0) ? (a / b) : 0;
     default:
-        return 0;
+        index = 4; // Вихід за границю, що викличе error
     }
+
+    return results[index]; // При default буде звернення до results[4], що викличе помилку
 }

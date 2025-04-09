@@ -9,7 +9,7 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "");
 
-    double a, b, c; // Пам'ять для змінної виділяється, але вона не використовується
+    double a, b;
     char operation;
     cout << "Введіть два числа: ";
     cin >> a >> b;
