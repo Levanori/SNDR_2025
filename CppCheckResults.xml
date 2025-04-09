@@ -2,9 +2,8 @@
 <results version="2">
     <cppcheck version="2.17.1" />
     <errors>
-        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;results[3]&apos; accessed at index 4, which is out of bounds." verbose="Array &apos;results[3]&apos; accessed at index 4, which is out of bounds." cwe="788" file0="calculate.cpp">
-            <location file="calculate.cpp" line="21" column="19" info="Array index out of bounds" />
-            <location file="calculate.cpp" line="18" column="17" info="Assignment &apos;index=4&apos;, assigned value is 4" />
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical disjunction always evaluates to true: n &gt;= 0 || n &lt;= 1000000." verbose="Logical disjunction always evaluates to true: n &gt;= 0 || n &lt;= 1000000. Are these conditions necessary? Did you intend to use &amp;&amp; instead? Are the numbers correct? Are you comparing the correct variables?" cwe="571" file0="number_utils.cpp">
+            <location file="number_utils.cpp" line="10" column="16" />
         </error>
         <error id="checkersReport" severity="information" msg="Active checkers: 167/856 (use --checkers-report=&lt;filename&gt; to see details)" verbose="Active checkers: 167/856 (use --checkers-report=&lt;filename&gt; to see details)" />
     </errors>
