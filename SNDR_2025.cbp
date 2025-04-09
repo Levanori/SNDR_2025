@@ -32,7 +32,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="calculate.cpp" />
+		<Unit filename="calculate.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="number_utils.cpp" />
+		<Unit filename="number_utils.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="triangle.cpp" />
+		<Unit filename="triangle.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
