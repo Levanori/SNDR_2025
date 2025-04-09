@@ -12,3 +12,10 @@ bool isPrime(int n) {
     }
     return true;
 }
+
+// Додано невикористану функцію, яка ніде не викликається
+int factorial(int n) {
+    if (n <= 1)
+        return 1;
+    return n * factorial(n - 1);
+}

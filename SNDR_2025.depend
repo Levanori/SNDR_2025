@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 1744184972 source:g:\Університети\Завдання 1 курс - 2 семестр\sndr_2025\calculate.cpp
 
-1744182697 source:g:\Університети\Завдання 1 курс - 2 семестр\sndr_2025\main.cpp
+1744187427 source:g:\Університети\Завдання 1 курс - 2 семестр\sndr_2025\main.cpp
 	<iostream>
 	"calculate.h"
 	"triangle.h"
@@ -15,7 +15,7 @@
 
 1743329204 g:\Університети\Завдання 1 курс - 2 семестр\sndr_2025\triangle.h
 
-1744185378 source:g:\Університети\Завдання 1 курс - 2 семестр\sndr_2025\number_utils.cpp
+1744187427 source:g:\Університети\Завдання 1 курс - 2 семестр\sndr_2025\number_utils.cpp
 
 1743330856 g:\Університети\Завдання 1 курс - 2 семестр\sndr_2025\number_utils.h
 

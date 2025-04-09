@@ -2,14 +2,9 @@
 <results version="2">
     <cppcheck version="2.17.1" />
     <errors>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="main.cpp" line="1" column="0" />
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;locale&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;locale&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="main.cpp" line="5" column="0" />
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="triangle.cpp" line="1" column="0" />
+        <error id="unusedFunction" severity="style" msg="The function &apos;factorial&apos; is never used." verbose="The function &apos;factorial&apos; is never used." cwe="561">
+            <location file="number_utils.cpp" line="17" column="0" />
+            <symbol>factorial</symbol>
         </error>
         <error id="checkersReport" severity="information" msg="Active checkers: 167/856 (use --checkers-report=&lt;filename&gt; to see details)" verbose="Active checkers: 167/856 (use --checkers-report=&lt;filename&gt; to see details)" />
     </errors>
