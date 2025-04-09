@@ -2,7 +2,7 @@
 #include "calculate.h"
 #include "triangle.h"
 #include "number_utils.h"
-#include <locale>
+#include <locale> // Просто інформування, що cppcheck не бачить файли бібліотек
 
 using namespace std;
 

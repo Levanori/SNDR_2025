@@ -2,8 +2,14 @@
 <results version="2">
     <cppcheck version="2.17.1" />
     <errors>
-        <error id="incorrectLogicOperator" severity="warning" msg="Logical disjunction always evaluates to true: n &gt;= 0 || n &lt;= 1000000." verbose="Logical disjunction always evaluates to true: n &gt;= 0 || n &lt;= 1000000. Are these conditions necessary? Did you intend to use &amp;&amp; instead? Are the numbers correct? Are you comparing the correct variables?" cwe="571" file0="number_utils.cpp">
-            <location file="number_utils.cpp" line="10" column="16" />
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="main.cpp" line="1" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;locale&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;locale&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="main.cpp" line="5" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="triangle.cpp" line="1" column="0" />
         </error>
         <error id="checkersReport" severity="information" msg="Active checkers: 167/856 (use --checkers-report=&lt;filename&gt; to see details)" verbose="Active checkers: 167/856 (use --checkers-report=&lt;filename&gt; to see details)" />
     </errors>
