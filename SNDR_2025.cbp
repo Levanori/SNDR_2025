@@ -27,6 +27,12 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
+			<Target title="TestDriver">
+				<Option output="bin/TestDriver/SNDR_2025" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/TestDriver" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
@@ -34,14 +40,20 @@
 		</Compiler>
 		<Unit filename="calculate.cpp" />
 		<Unit filename="calculate.h" />
-		<Unit filename="main.cpp" />
+		<Unit filename="main.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="number_utils.cpp" />
 		<Unit filename="number_utils.h">
-			<Option target="&lt;{~None~}&gt;" />
+			<Option target="TestDriver" />
+		</Unit>
+		<Unit filename="test_driver.cpp">
+			<Option target="TestDriver" />
 		</Unit>
 		<Unit filename="triangle.cpp" />
 		<Unit filename="triangle.h">
-			<Option target="&lt;{~None~}&gt;" />
+			<Option target="TestDriver" />
 		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
