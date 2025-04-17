@@ -91,7 +91,7 @@ void run_isPrime_tests_gemini() {
         } else {
             std::cout << " - FAILED (Actual: " << actual << ")" << std::endl;
         }
-        std::cout << "-----------------------------" << std::endl;
+        std::cout << "------------------------------" << std::endl;
     };
 
     run_test("Less than 2", 1, false);
