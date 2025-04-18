@@ -17,6 +17,7 @@ void run_tests_triangle_gemini() {
         std::string actual = triangleType(a, b, c);
         std::cout << "Expected:  " << expected << std::endl;
         std::cout << "Actual:    " << actual << std::endl;
+        assert(actual == expected); // Додаємо assert
         if (actual == expected) {
             std::cout << " - PASSED" << std::endl;
             passed_count++;
@@ -65,6 +66,7 @@ void run_isEven_tests_gemini() {
     auto run_test = [&](const char* test_name, int input, bool expected) {
         std::cout << "Test: " << test_name << ", Input: " << input << ", Expected: " << expected;
         bool actual = isEven(input);
+        assert(actual == expected); // Додаємо assert
         if (actual == expected) {
             std::cout << " - PASSED" << std::endl;
         } else {
@@ -86,6 +88,7 @@ void run_isPrime_tests_gemini() {
     auto run_test = [&](const char* test_name, int input, bool expected) {
         std::cout << "Test: " << test_name << ", Input: " << input << ", Expected: " << expected;
         bool actual = isPrime(input);
+        assert(actual == expected); // Додаємо assert
         if (actual == expected) {
             std::cout << " - PASSED" << std::endl;
         } else {
@@ -109,6 +112,7 @@ void run_calculate_tests_gemini() {
     auto run_test = [&](const char* test_name, double a, double b, char op, double expected) {
         std::cout << "Test: " << test_name << ", Input: " << a << " " << op << " " << b << ", Expected: " << expected;
         double actual = calculate(a, b, op);
+        assert(std::abs(actual - expected) < 1e-9); // Додаємо assert
         if (std::abs(actual - expected) < 1e-9) { // Double comparison with margin of error
             std::cout << " - PASSED" << std::endl;
         } else {
@@ -162,6 +166,7 @@ void testTriangleType_chatgpt() {
 
     for (const auto& test : tests) {
         string result = triangleType(test.a, test.b, test.c);
+        assert(result == test.expected); // Додаємо assert
         cout << "triangleType(" << test.a << ", " << test.b << ", " << test.c << ") = " << result
              << " | Expected: " << test.expected
              << " | " << (result == test.expected ? "PASSED" : "FAILED") << endl;
@@ -178,6 +183,7 @@ void testIsEven_chatgpt() {
 
     for (int i = 0; i < 5; ++i) {
         bool result = isEven(testValues[i]);
+        assert(result == expected[i]); // Додаємо assert
         cout << "isEven(" << testValues[i] << ") = " << result
              << " | Expected: " << expected[i]
              << " | " << (result == expected[i] ? "PASSED" : "FAILED") << endl;
@@ -194,6 +200,7 @@ void testIsPrime_chatgpt() {
 
     for (int i = 0; i < 7; ++i) {
         bool result = isPrime(testValues[i]);
+        assert(result == expected[i]); // Додаємо assert
         cout << "isPrime(" << testValues[i] << ") = " << result
              << " | Expected: " << expected[i]
              << " | " << (result == expected[i] ? "PASSED" : "FAILED") << endl;
@@ -222,6 +229,7 @@ void testCalculate_chatgpt() {
 
     for (const auto& test : tests) {
         double result = calculate(test.a, test.b, test.op);
+        assert(abs(result - test.expected) < 1e-6); // Додаємо assert
         cout << "calculate(" << test.a << ", " << test.b << ", '" << test.op << "') = " << result
              << " | Expected: " << test.expected
              << " | " << ((abs(result - test.expected) < 1e-6) ? "PASSED" : "FAILED") << endl;
@@ -231,7 +239,6 @@ void testCalculate_chatgpt() {
 }
 
 int main() {
-    assert(2 + 2 == 5);
     run_tests_triangle_gemini();
     run_isEven_tests_gemini();
     run_isPrime_tests_gemini();
