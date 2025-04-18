@@ -231,6 +231,7 @@ void testCalculate_chatgpt() {
 }
 
 int main() {
+    assert(2 + 2 == 5);
     run_tests_triangle_gemini();
     run_isEven_tests_gemini();
     run_isPrime_tests_gemini();

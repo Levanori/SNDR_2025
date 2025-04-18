@@ -4,13 +4,13 @@ using namespace std;
 
 string triangleType(double a, double b, double c) {
     if (a + b <= c || a + c <= b || b + c <= a) {
-        return "Не трикутник";
+        return "Not a triangle";
     }
     if (a == b && b == c) {
-        return "Рівносторонній";
+        return "Equilateral";
     }
     if (a == b || b == c || a == c) {
-        return "Рівнобедрений";
+        return "Isosceles";
     }
-    return "Різносторонній";
+    return "Oxidous";
 }
