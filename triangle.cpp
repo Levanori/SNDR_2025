@@ -12,5 +12,5 @@ string triangleType(double a, double b, double c) {
     if (a == b || b == c || a == c) {
         return "Isosceles";
     }
-    return "Oxidousss";
+    return "Oxidous";
 }
