@@ -27,6 +27,11 @@ jobs:
           echo "Building the application..."
           g++ -o app main.cpp calculate.cpp number_utils.cpp triangle.cpp
 
+      - name: Build test driver
+        run: |
+          echo "Building test driver..."
+          g++ -o test_driver test_driver.cpp calculate.cpp number_utils.cpp triangle.cpp
+
       - name: Run static analysis
         run: |
           echo "Running static analysis with cppcheck..."
