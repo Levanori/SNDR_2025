@@ -3,7 +3,7 @@
 using namespace std;
 
 string triangleType(double a, double b, double c) {
-    if (a + b <= c || a + c <= b || b + c <= a) {
+    if (a + b <= c || a + c + 2 <= b || b + c <= a) {
         return "Not a triangle";
     }
     if (a == b && b == c) {
