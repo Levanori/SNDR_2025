@@ -31,6 +31,8 @@ jobs:
         run: |
           echo "Building test driver..."
           g++ -o test_driver test_driver.cpp calculate.cpp number_utils.cpp triangle.cpp
+          echo "Running test driver..."
+          ./test_driver
 
       - name: Run static analysis
         run: |
